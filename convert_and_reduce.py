@@ -14,6 +14,16 @@ def convert(files):
 
     for file in files:
         df = pd.read_spss(file)
+
+        if "Edadif" in df.columns:
+            df["Edadif"] = pd.to_numeric(df["Edadif"], errors="coerce")
+
+        if "Pnadif" in df.columns:
+            df["Pnadif"] = df["Pnadif"].astype(str).str.strip()
+
+        if "Predif" in df.columns:
+            df["Predif"] = df["Predif"].astype(str).str.strip()
+
         dfs.append(df)
 
     df_total = pd.concat(dfs, ignore_index=True)
