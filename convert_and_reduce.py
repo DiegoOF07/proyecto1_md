@@ -4,8 +4,8 @@ from collections import Counter, defaultdict
 import os
 
 DATA_PATH = "./data/spss/defun_*.sav"
-OUTPUT_CSV = "./data/csv/defunciones_2012_2022.csv"
-OUTPUT_CSV_STABLE = "./data/csv/defunciones_2012_2022_columnas_estables.csv"
+OUTPUT_CSV = "./data/defunciones_2012_2022.csv"
+OUTPUT_CSV_STABLE = "./data/defunciones_2012_2022_columnas_estables.csv"
 
 files = glob(DATA_PATH)
 

@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("./data/csv/defunciones_2012_2022_columnas_estables.csv", 
+df = pd.read_csv("./data/defunciones_2012_2022_columnas_estables.csv", 
     dtype={
         "Edadif": "float64",
         "Pnadif": "string",
